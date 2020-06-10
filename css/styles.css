@@ -1,0 +1,407 @@
+/* цвет основного текста #757575  */
+/* цвет вторичного текста (заголовки) #212121 */
+/* цвет hero, подписи картинок "чем мы занимаемся" #FFFFFF */
+
+/* хедер цвет: 
+1) WebStudio #2196F3; 
+2) Nav #212121, при наведении #2196F3; 
+3) mail, tel #757575, при наведении #2196F3 */
+
+/* футер цвет:
+1) WebStudio #2196F3; 
+2) основной цвет #FFFFFF;
+3) mail, tel rgba(255, 255, 255, 0.6);
+4) 2020 rgba(255, 255, 255, 0.4) */
+
+/* цвет фона секций:
+1) хедер #FFFFFF;
+2) hero rgba(47, 48, 58, 0.8);
+3) преимущества, чем мы занимаемся, клиенты #E5E5E5;
+4) сотрудники #F5F4FA;
+5) футер #2F303A */
+
+/* цвет фона элементов:
+1) заказать услугу background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+2) преимущества #F5F4FA;
+3) чем мы занимаемся: картинки или ссылки на источник,
+текст rgba(47, 48, 58, 0.8)
+4) сотрудники: картинки или ссылки на источник,
+текст #FFFFFF, 
+лого #FFFFFF, активные #2196F3;
+5) футер лого rgba(255, 255, 255, 0.1),
+активные #2196F3 */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-wight: 100%;
+  height: auto;
+}
+
+:root {
+  /* цвета текта */
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-end-color: rgba(255, 255, 255, 0.4);
+  /* цвета фонов секций и элементов */
+  --background-services-color: rgba(47, 48, 58, 0.8);
+  --background-elements-color: #f5f4fa;
+  --background-hero-color: rgba(47, 48, 58, 0.8);
+  --background-sections-color: #e5e5e5; /* преимущества, чем мы занимаемся, клиенты */
+  --background-team-color: #f5f4fa; /* сотрудники */
+  --background-footer-color: #2f303a;
+  --background-footer-logo-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+.logo-studio {
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+/* Nav */
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--background-hero-color);
+}
+.hero-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
+
+/* Секции */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+/* Преимущества */
+.advantage {
+  /* что-то будет тут */
+}
+.advantage-item {
+  /* что-то будет тут */
+}
+.advantage-title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+.advantage-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* Услуги */
+.services {
+  /* здесь что-то будет */
+}
+.services-title {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+
+  background-color: var(--background-services-color);
+}
+
+/* Сотрудники */
+.section.team {
+  background-color: var(--background-elements-color);
+}
+.team-list {
+  /* здесь что-то будет */
+}
+.team-list-item {
+  /* здесь что-то будет */
+}
+.team-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+
+  background-color: var(--primary-white-color);
+}
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+
+  background-color: var(--primary-white-color);
+}
+.network {
+  background-color: var(--primary-white-color);
+
+  /* здесь что-то будет */
+}
+.network-title {
+  /* здесь что-то будет */
+}
+.network-link {
+  /* здесь что-то будет */
+}
+
+/* Клиенты */
+.customers {
+  /* здесь что-то будет */
+}
+.customer-logo {
+  /* здесь что-то будет */
+}
+.customer-logo:hover,
+.customer-logo:focus {
+  color: var(--accent-color);
+}
+
+/* Футер */
+.footer {
+  background-color: var(--background-footer-color);
+}
+.address {
+  /* здесь что-то будет */
+}
+.logo-footer {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer-address {
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+}
+.footer-contact {
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-contacts-color);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+.join-title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.network-title-footer {
+  /* здесь что-то будет */
+}
+.network.footer a {
+  text-decoration: none;
+
+  color: var(--primary-white-color);
+  background-color: var(--background-footer-logo-color);
+}
+.network.footer a:hover,
+.network.footer a:focus {
+  color: var(--accent-color);
+}
+.subscribe {
+  /* здесь что-то будет */
+}
+.subscribe-title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+.subscribe-button {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  /* align-items: center; */
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
+.footer-end {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-end-color);
+}
+
+/* Портфолио */
+.portfolio {
+  /* здесь что-то будет */
+}
+.button-fiters {
+  font-family: inherit;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+
+  background-color: var(--background-elements-color);
+}
+.button-fiters:hover,
+.button-fiters:focus,
+.button-fiters:active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.portfolio-list {
+  /* здесь что-то будет */
+}
+.portfolio-item {
+  /* здесь что-то будет */
+}
+.portfolio-link {
+  text-decoration: none;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+}
+.portfolio-kind {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.portfolio-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
