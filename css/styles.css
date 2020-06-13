@@ -160,9 +160,9 @@ ul {
 .link:active {
   color: var(--accent-color);
 }
-/* .site-nav .link.current {
+.site-nav .link.current {
   color: var(--accent-color);
-} */
+}
 
 /* Hero */
 .hero {
