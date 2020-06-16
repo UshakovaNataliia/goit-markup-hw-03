@@ -526,12 +526,14 @@ ul {
 
 /* Портфолио */
 
+.filters {
+  margin-bottom: 50px;
+}
 .button-fiters {
   display: block;
   border: 0em;
   border-radius: 4px;
   margin-right: 8px;
-  margin-bottom: 50px;
 
   font-family: inherit;
   text-decoration: none;
